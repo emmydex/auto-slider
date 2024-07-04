@@ -12,7 +12,12 @@ main {
   width: 100%;
   height: var(--height);
   overflow: hidden;
-  mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent);
+  mask-image: linear-gradient( 
+    to right,
+    transparent, 
+    #000 10% 90%,
+    transparent
+    );
 }
 
 .slider .list{
@@ -29,7 +34,7 @@ main {
     left: 100%;
     animation: autoRun 10s linear infinite;
     transition: filter 0.5s;
-    -o-animation-delay: calc( (10s / var(--quantity)) * (var(--position) -1) ) !important;
+    animation-delay: calc( (10s / var(--quantity)) * (var(--position) - 1) ) !important;
 }
 
 .slider .list .item img{
